@@ -1,6 +1,9 @@
 .btn-primary{
     background-color: #25D366 !important;
     border-color:#25D366 !important;
+    display: inline-flex  !important;
+    align-items: center !important;
+    justify-content: center !important; 
 }
 
 .btn-primary:hover {
@@ -10,5 +13,5 @@
 
 
 .btn i {
-    font-size: 24px; /* Tamaño fijo del ícono (ajusta según necesites) */
+    font-size: 32px; /* Tamaño fijo del ícono (ajusta según necesites) */
 }
