@@ -1,0 +1,14 @@
+.btn-primary{
+    background-color: #25D366 !important;
+    border-color:#25D366 !important;
+}
+
+.btn-primary:hover {
+    background-color: #128C7E !important;
+    border-color:#128C7E !important;
+}
+
+
+.btn i {
+    font-size: 24px; /* Tamaño fijo del ícono (ajusta según necesites) */
+}
