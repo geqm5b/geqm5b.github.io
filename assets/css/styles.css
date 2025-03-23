@@ -10,8 +10,10 @@
     background-color: #128C7E !important;
     border-color:#128C7E !important;
 }
-
-
 .btn i {
     font-size: 32px; /* Tamaño fijo del ícono (ajusta según necesites) */
+}
+
+body {
+    font-family: "Cormorant Garamond" !important;
 }
