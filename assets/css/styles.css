@@ -16,10 +16,29 @@
 
 body {
     font-family: "Cormorant Upright" !important;
+    background-color: #FAF3E0;
 }
-
 /*
 * {
   outline: 1px solid red; 
 }
 */
+.navbar {
+    background-color: #2C2C54;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.footer {
+    background-color: #2C2C54;
+}
+
+.card {
+    background-color: #FAF3E0 ;
+}
