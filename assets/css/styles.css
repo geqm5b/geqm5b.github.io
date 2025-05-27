@@ -18,11 +18,11 @@ body {
     font-family: "Cormorant Upright" !important;
     background-color: #FAF3E0;
 }
-/*
+
 * {
   outline: 1px solid red; 
 }
-*/
+
 .navbar {
     background-color: #2C2C54;
     margin-top: 0 !important;
@@ -41,4 +41,9 @@ body {
 
 .card {
     background-color: #FAF3E0 ;
+}
+.row {
+    padding-right: 0 !important;
+    padding-left: 0 m !important;
+    --bs-gutter-x: 0rem !important;
 }
