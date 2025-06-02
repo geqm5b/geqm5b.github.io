@@ -1,0 +1,28 @@
+{
+    "servicios": [
+        {
+            "categoria": "tarot",
+            "nombre": "prosperidad",
+            "descripcion": "texto desbribiendo el producto",
+            "precio": 20,
+            "precencial": false,
+            "imagen": "path/to/img"
+        },
+        {
+            "categoria": "registros akashikos",
+            "nombre": "apertura",
+            "descripcion": "texto desbribiendo el producto",
+            "precio": 20,
+            "precencial": false,
+            "imagen": "path/to/img"
+        },
+        {
+            "categoria": "registros akashikos",
+            "nombre": "prosperidad",
+            "descripcion": "texto desbribiendo el producto",
+            "precio": 20,
+            "precencial": false,
+            "imagen": "path/to/img"
+        }
+    ]
+}
