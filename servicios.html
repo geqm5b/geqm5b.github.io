@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- end font-->
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <!--Header-->
     <header>
       <!--Navbar-->
@@ -30,19 +30,72 @@
               <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="index.html#aboutMe"><b>Sobre Mi</b></a>
                 <a class="nav-link active" aria-current="page" href="index.html#testimonials"><b>Testimonios</b></a>    
-                <a class="nav-link active" aria-current="page" href="servicios.html"><b>Servicios</b></a>
-   
+                <a class="nav-link active" aria-current="page" href="servicios.html"><b>Servicios</b></a>  
               </div>
             </div>
         </nav>
       </div>
     </header>
     <!--Main 2-->
-    <main>
+    <main class="flex-grow-1 container-fluid pt-5">
+      <div class="row">
+        <div class="d-md-none text-start">
+          <!-- Botón fijo en la pantalla -->
+          <button class="btn btn-primary position-fixed bottom-0 start-0 m-3 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+              Filtros
+          </button>
+        </div>
+        <!--Barra lateral fija-->
+        <div class="col-md-2 pt-5 position-fixed h-100 d-none d-md-block">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="tarot" value="tarot" >
+            <label class="form-check-label" for="tarot">Lecturas de Tarot</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="oraculo" value="oraculo" >
+            <label class="form-check-label" for="oraculo">Lectura de Oráculo</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="registros" value="registros" >
+            <label class="form-check-label" for="registros">Apertura de Registros</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="ritual" value="ritual" >
+            <label class="form-check-label" for="ritual">Rituales</label>
+          </div>
+        </div>
+        <!-- Menú lateral en móviles -->
+        <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="sidebar">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Filtros</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="tarot" value="tarot" >
+                <label class="form-check-label" for="tarot">Lecturas de Tarot</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="oraculo" value="oraculo" >
+                <label class="form-check-label" for="tarot">Lectura de Oráculo</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="tarot" value="tarot" >
+                <label class="form-check-label" for="tarot">Apertura de Registros</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="tarot" value="tarot" >
+                <label class="form-check-label" for="tarot">Rituales</label>
+              </div>
+            </div>
+        </div>
+        <div class="col-md offset-md-2">
+          <div class="pt-5 d-flex flex-wrap gap-3 justify-content-center" id="contenedor-servicios"></div>
+        </div>
+      </div>
     </main>
     <!--Footer-->
-    <div class="footer"> 
-      <footer class="d-flex flex-wrap justify-content-between align-items-centerborder-top"> 
+      <footer class="d-flex flex-wrap justify-content-between align-items-center border-top footer"> 
         <div class="col-md-4 d-flex align-items-center"> 
           <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <img src="assets/images/gdl_logo.png" alt="Logo" width="40" height="40"></a>
           <span class="mb-3 mb-md-0 text-white">© 2025 Girasoles de Luz</span> 
@@ -58,7 +111,6 @@
           </li> 
         </ul>
       </footer> 
-    </div>
     <script src="/js/scripts.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
