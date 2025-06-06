@@ -1,28 +1,14 @@
 fetch('data/servicios.json')
   .then(response => response.json())
   .then(data => {
-    console.log(data); // ver qué levantó
-    mostrarServicios(data);
-    document.body.addEventListener('change', (event) => {     // Delegación de eventos 
-      if (event.target.classList.contains('form-check-input')) {
-        aplicarFiltros(data);
-      }
-    });
+    console.log(data) //log para ver que levanto el json
+    mostrarServicios(data); // llamada a mostrar datos
   })
   .catch(error => console.error('Error al cargar JSON:', error));
 
-function aplicarFiltros(data) {
-  const filtrosActivos = Array.from(document.querySelectorAll('.form-check-input:checked'))
-    .map(input => input.value);
-
-  const filtrados = filtrosActivos.length === 0
-  ? data : data.filter(servicio => filtrosActivos.includes(servicio.categoria.toLowerCase()));
-  mostrarServicios(filtrados);
-}
 
 function mostrarServicios (servicios) {
   const contenedor = document.getElementById("contenedor-servicios")
-  contenedor.innerHTML = ''; // limpia todo el contenido
   servicios.forEach(servicio => {
     let cardDiv = document.createElement("Div");
     cardDiv.classList.add("card");
