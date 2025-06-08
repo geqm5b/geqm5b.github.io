@@ -25,7 +25,7 @@ function mostrarServicios (servicios) {
   contenedor.innerHTML = ''; // limpia todo el contenido
   servicios.forEach(servicio => {
     let divCardContainer = document.createElement("div");
-    divCardContainer.classList.add("card", "card-container");
+    divCardContainer.classList.add("card", "card-servicio", "card-container");
     let cardHeader = document.createElement("h5");
     cardHeader.classList.add("card-header");
     cardHeader.textContent = `${servicio.categoria} ${servicio.nombre}`;

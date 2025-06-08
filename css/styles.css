@@ -11,7 +11,7 @@
     border-color:#128C7E !important;
 }
 .btn i {
-    font-size: 32px; /* Tamaño fijo del ícono (ajusta según necesites) */
+    font-size: 32px; /* Tamaño del ícono*/
 }
 
 body {
@@ -46,13 +46,18 @@ body {
     --bs-gutter-x: 0rem !important;
 }
 
-/* Carta giratoria */
+/* Cambiar el rem cambia el tamaño de la carta de servicios*/
 .card-container {
   width: 100%;
   max-width: 16rem;
 }
 
-.card {
+/* Color de fondo de los tesimonios */
+.card-testimonios {
+    background-color: #FAF3E0 ; 
+}
+
+.card-servicio {
   aspect-ratio: 2 / 3;
   display: flex;
   flex-direction: column;
