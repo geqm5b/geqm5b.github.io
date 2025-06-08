@@ -20,9 +20,9 @@ body {
 }
 
 
-* {
+/* * {
   outline: 1px solid red; 
-}
+} */
 
 .navbar {
     background-color: #2C2C54;

@@ -15,8 +15,7 @@ function aplicarFiltros(data) {
   const filtrosActivos = Array.from(document.querySelectorAll('.form-check-input:checked'))
     .map(input => input.value);
   console.log(filtrosActivos)
-  const filtrados = filtrosActivos.length === 0
-  ? data : data.filter(servicio => filtrosActivos.includes(servicio.categoria.toLowerCase()));
+  const filtrados = filtrosActivos.length === 0 ? data : data.filter(servicio => filtrosActivos.includes(servicio.categoria.toLowerCase()));
   mostrarServicios(filtrados);
 }
 
