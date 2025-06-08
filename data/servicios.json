@@ -4,87 +4,87 @@
         "nombre": "Amor",
         "descripcion": "Descubrí que te depara el corazón, estás lecturas te guían y te brindan claridad en tus vínculos, emociones y desiciones del alma. Abrí el canal del amor con claridad y propósito.",
         "precio": 20,
-        "precencial": false,
-        "imagen": "/assets/images/xxii_hanged.png"
+        "presencial": false,
+        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
     },
     {
         "categoria": "Tarot",
         "nombre": "Finanzas",
         "descripcion": "El dinero es energía y cuando fluye en armonía con tu propósito se convierte en una poderosa herramienta de expansión. Estás lecturas te invitan a mirar más allá de los números y conectar con la raíz energética de tu abundancia.",
         "precio": 20,
-        "precencial": false,
-        "imagen": "/assets/images/xxii_hanged.png"
+        "presencial": false,
+        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
     },
     {
         "categoria": "Tarot",
         "nombre": "Trabajo",
         "descripcion": "Estás lecturas son una guía profunda y amorosa para ayudarte a descubrir lo que tú alma necesita saber hoy respecto a tu propósito tu crecimiento profesional y las oportunidades que  esperan por vos.",
         "precio": 20,
-        "precencial": false,
-        "imagen": "/assets/images/xxii_hanged.png"
+        "presencial": false,
+        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
     },
     {
         "categoria": "Tarot",
         "nombre": "Cruz Celta",
         "descripcion": "Está lectura te muestra los caminos que podés tomar para alinearte con tu propósito más elevado, recibí la señal del cosmos y toma desiciones con confianza.",
         "precio": 20,
-        "precencial": false,
-        "imagen": "/assets/images/xxii_hanged.png"
+        "presencial": false,
+        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
     },
     {
         "categoria": "Tarot",
         "nombre": "Bienestar",
         "descripcion": "En desarrollo",
         "precio": 20,
-        "precencial": false,
-        "imagen": "/assets/images/xxii_hanged.png"
+        "presencial": false,
+        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
     },
     {
         "categoria": "Registros",
         "nombre": "Akáshikos",
         "descripcion": "Abrir tus registros akashicos es abrir la puerta a tu verdad eterna. En este espacio de amor incondicional, cada pregunta encuentra respuesta, cada herida es abrazada, cada miedo se disuelve. Si sentís el llamado, es por qué tú alma está lista para recordar si origen.",
         "precio": 20,
-        "precencial": false,
-        "imagen": "/assets/images/xxii_hanged.png"
+        "presencial": false,
+        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
     },
     {
         "categoria": "Oráculo",
         "nombre": "Floral",
         "descripcion": "Las lecturas con este oráculo son como entrar en un jardín maravilloso, donde las voces de la flores te hablan, dan consejo, te ayudan a transformar hábitos y situaciones.",
         "precio": 20,
-        "precencial": false,
-        "imagen": "/assets/images/xxii_hanged.png"
+        "presencial": false,
+        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
     },
     {
         "categoria": "Limpieza",
         "nombre": "Energética",
         "descripcion": "La limpieza energética es un viaje profundo hacia la renovación de tu ser, a través del antiguo arte del péndulo hebreo, herramienta sagrada de sanación y transformación, te invito a emprender está liberación profunda",
         "precio": 20,
-        "precencial": false,
-        "imagen": "/assets/images/xxii_hanged.png"
+        "presencial": false,
+        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
     },
     {
         "categoria": "Ritual",
         "nombre": "Anima Áurea",
         "descripcion": "En progreso",
         "precio": 20,
-        "precencial": false,
-        "imagen": "/assets/images/xxii_hanged.png"
+        "presencial": false,
+        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
     },
     {
         "categoria": "Ritual",
         "nombre": "Iter Amoris",
         "descripcion": "En progreso",
         "precio": 20,
-        "precencial": false,
-        "imagen": "/assets/images/xxii_hanged.png"
+        "presencial": false,
+        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
     },
     {
         "categoria": "Ritual",
         "nombre": "Ignis Divinus",
         "descripcion": "En progreso",
         "precio": 20,
-        "precencial": false,
-        "imagen": "/assets/images/xxii_hanged.png"
+        "presencial": false,
+        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
     }
 ]

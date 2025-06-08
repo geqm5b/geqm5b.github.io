@@ -40,11 +40,74 @@ body {
     background-color: #2C2C54;
 }
 
-.card {
-    background-color: #FAF3E0 ;
-}
 .row {
     padding-right: 0 !important;
     padding-left: 0 !important;
     --bs-gutter-x: 0rem !important;
+}
+
+/* Carta giratoria */
+.card-container {
+  width: 100%;
+  max-width: 16rem;
+}
+
+.card {
+  aspect-ratio: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+}
+
+.card-header {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.image-flip-container {
+  position: relative;
+  width: 100%;
+  flex: 1 1 auto;
+  perspective: 1000px;
+}
+
+.image-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.image-flip-container:hover .image-inner {
+  transform: rotateY(180deg);
+}
+
+.image-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.image-front,
+.image-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-front img,
+.image-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-back {
+  transform: rotateY(180deg);
 }
