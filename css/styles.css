@@ -16,7 +16,7 @@
 
 body {
     font-family: "Cormorant Upright" !important;
-    background-color: #FAF3E0;
+    background-color: #FAF3E0 !important;
 }
 
 
@@ -79,6 +79,13 @@ body {
   flex: 1 1 auto;
   perspective: 1000px;
 }
+.featurette-heading{
+  padding-left: 10px; /* mueve todo el párrafo 30px a la derecha */
+}
+
+.col-md-7 p {
+  padding-left: 9px; /* mueve todo el párrafo 30px a la derecha */
+}
 
 .image-inner {
   width: 100%;
@@ -115,4 +122,21 @@ body {
 
 .image-back {
   transform: rotateY(180deg);
+}
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-text {
+    font-size: 18px;
+  }
+  
+#inscribirme {
+  font-size: 18px;
+}
+
+#formulario {
+  font-size: 19px;
 }
