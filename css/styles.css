@@ -17,6 +17,8 @@
 body {
     font-family: "Cormorant Upright" !important;
     background-color: #FAF3E0 !important;
+    font-size: 18px;
+
 }
 
 
@@ -54,7 +56,7 @@ body {
 
 /* Color de fondo de los tesimonios */
 .card-testimonios {
-    background-color: #FAF3E0 ; 
+    background-color: #FAF3E0 !important; 
 }
 
 .card-servicio {
@@ -124,19 +126,19 @@ body {
   transform: rotateY(180deg);
 }
 
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .card-text {
-    font-size: 18px;
-  }
-  
-#inscribirme {
-  font-size: 18px;
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
-#formulario {
-  font-size: 19px;
+.fontModal {
+  font-size: 20px;
+}
+
+#modalPrecio {
+  font-size: 25px;
+}
+
+.filtros-btn {
+  left: -2rem !important;
 }
