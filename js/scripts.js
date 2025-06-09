@@ -1,20 +1,25 @@
+function agregarEventListenerGlobal (type, selector, callback, parent = document){
+      parent.addEventListener(type, e => {     
+      if (e.target.classList.contains(selector)) {
+        callback(e);
+      }
+    });
+}
 fetch('data/servicios.json')
   .then(response => response.json())
   .then(data => {
     console.log(data); // ver qué levantó
     mostrarServicios(data); // mostrar los datos
-    document.body.addEventListener('change', (event) => {     // Delegación de eventos 
-      if (event.target.classList.contains('form-check-input')) {
-        aplicarFiltros(data);
-      }
-    });
+    agregarEventListenerGlobal('change', 'form-check-input', e =>{ 
+      aplicarFiltros(data);
+    })
   })
   .catch(error => console.error('Error al cargar JSON:', error));
 
 function aplicarFiltros(data) {
   const filtrosActivos = Array.from(document.querySelectorAll('.form-check-input:checked'))
     .map(input => input.value);
-  console.log(filtrosActivos)
+  console.log(filtrosActivos) //revisar que esta filtrando
   const filtrados = filtrosActivos.length === 0 ? data : data.filter(servicio => filtrosActivos.includes(servicio.categoria.toLowerCase()));
   mostrarServicios(filtrados);
 }
@@ -52,22 +57,5 @@ function mostrarServicios (servicios) {
     divCardContainer.appendChild(divImageFlipContainer);
     contenedor.appendChild(divCardContainer);
     
-    // cardDiv.classList.add("card");
-    // cardDiv.style.width = "15rem"; //crear una clase para todos los estilos, esto es test
-
-    // let header = document.createElement("h5");
-    // header.classList.add("card-header", "text-center");
-    // header.textContent = `${servicio.categoria} ${servicio.nombre}`
-
-    // let img = document.createElement("img");
-    // img.src = servicio.imagenes.front;
-    // img.classList.add("card-img");
-    // img.style.aspectRatio = "2 / 3";
-    // img.style.objectFit = "cover";
-    // img.alt = `${servicio.categoria} ${servicio.nombre}`
-
-    // cardDiv.appendChild(header);
-    // cardDiv.appendChild(img);
-    // contenedor.appendChild(cardDiv);
   });  
 }
