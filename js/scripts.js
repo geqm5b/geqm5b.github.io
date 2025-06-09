@@ -5,6 +5,15 @@ function agregarEventListenerGlobal (type, selector, callback, parent = document
       }
     });
 }
+
+agregarEventListenerGlobal('click', 'open-modal', e => {
+  document.getElementById("modalTitulo").textContent = e.target.dataset.title;
+  document.getElementById("modalBody").textContent = e.target.dataset.description;
+  document.getElementById("modalPrecio").textContent = e.target.dataset.price;
+  const modal = new bootstrap.Modal(document.getElementById("modalServicios"));
+  modal.show();
+})
+
 fetch('data/servicios.json')
   .then(response => response.json())
   .then(data => {
@@ -47,6 +56,12 @@ function mostrarServicios (servicios) {
     let imgBack = document.createElement("img");
     imgBack.src = servicio.imagenes.back;
     imgBack.alt = `${servicio.categoria} ${servicio.nombre}`;
+    let btnModal = document.createElement("button");
+    btnModal.classList.add("btn","btn-sm", "open-modal", "btn-outline-dark");
+    btnModal.setAttribute("data-title", `${servicio.categoria} ${servicio.nombre}`);
+    btnModal.setAttribute("data-description", servicio.descripcion);
+    btnModal.setAttribute("data-price", `${servicio.precio}$`);
+    btnModal.textContent = "Ver detalles"
 
     divSideBack.appendChild(imgBack);
     divSideFront.appendChild(imgFront);
@@ -55,7 +70,10 @@ function mostrarServicios (servicios) {
     divImageFlipContainer.appendChild(divImageInner);
     divCardContainer.appendChild(cardHeader);
     divCardContainer.appendChild(divImageFlipContainer);
+    divCardContainer.append(btnModal);
     contenedor.appendChild(divCardContainer);
     
   });  
 }
+
+
