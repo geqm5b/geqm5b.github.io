@@ -40,7 +40,7 @@ function mostrarServicios (servicios) {
     let divCardContainer = document.createElement("div");
     divCardContainer.classList.add("card", "card-servicio", "card-container");
     let cardHeader = document.createElement("h5");
-    cardHeader.classList.add("card-header");
+    cardHeader.classList.add("card-header", `card-header-${servicio.categoria}`);
     cardHeader.textContent = `${servicio.categoria} ${servicio.nombre}`;
     let divImageFlipContainer = document.createElement("div");
     divImageFlipContainer.classList.add("image-flip-container");

@@ -84,6 +84,18 @@ strong {
   text-align: center;
 }
 
+.card-header-Tarot {
+  background-color: #FDF5CE;
+}
+
+.card-header-Oráculo {
+  background-color: #E8F0D8;
+}
+
+.card-header-Ritual {
+  background-color: #DCEFFC;
+}
+
 .image-flip-container {
   position: relative;
   width: 100%;
@@ -91,11 +103,11 @@ strong {
   perspective: 1000px;
 }
 .featurette-heading{
-  padding-left: 10px; /* mueve todo el párrafo 30px a la derecha */
+  padding-left: 10px; 
 }
 
 .col-md-7 p {
-  padding-left: 9px; /* mueve todo el párrafo 30px a la derecha */
+  padding-left: 9px; 
 }
 
 .image-inner {
