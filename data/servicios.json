@@ -53,7 +53,7 @@
         "descripcion": "Las lecturas con este oráculo son como entrar en un jardín maravilloso, donde las voces de la flores te hablan, dan consejo, te ayudan a transformar hábitos y situaciones.",
         "precio": 20,
         "presencial": false,
-        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
+        "imagenes": { "front": "/assets/images/flowers_xiii.png", "back": "/assets/images/flowers_back.png"}
     },
     {
         "categoria": "Limpieza",
@@ -69,7 +69,7 @@
         "descripcion": "En progreso",
         "precio": 20,
         "presencial": false,
-        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
+        "imagenes": { "front": "/assets/images/anima_aurea.png", "back": "/assets/images/rituales_back.png"}
     },
     {
         "categoria": "Ritual",
@@ -77,7 +77,7 @@
         "descripcion": "En progreso",
         "precio": 20,
         "presencial": false,
-        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
+        "imagenes": { "front": "/assets/images/iter_amoris.png", "back": "/assets/images/rituales_back.png"}
     },
     {
         "categoria": "Ritual",
@@ -85,6 +85,6 @@
         "descripcion": "En progreso",
         "precio": 20,
         "presencial": false,
-        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
+        "imagenes": { "front": "/assets/images/ignis_divinus.png", "back": "/assets/images/rituales_back.png"}
     }
 ]
