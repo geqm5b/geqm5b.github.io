@@ -45,7 +45,7 @@
         "descripcion": "Abrir tus registros akashicos es abrir la puerta a tu verdad eterna. En este espacio de amor incondicional, cada pregunta encuentra respuesta, cada herida es abrazada, cada miedo se disuelve. Si sentís el llamado, es por qué tú alma está lista para recordar si origen.",
         "precio": 20,
         "presencial": false,
-        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
+        "imagenes": { "front": "/assets/images/registros.png", "back": "/assets/images/angels_back.png"}
     },
     {
         "categoria": "Oráculo",
@@ -61,7 +61,7 @@
         "descripcion": "La limpieza energética es un viaje profundo hacia la renovación de tu ser, a través del antiguo arte del péndulo hebreo, herramienta sagrada de sanación y transformación, te invito a emprender está liberación profunda",
         "precio": 20,
         "presencial": false,
-        "imagenes": { "front": "/assets/images/xxii_hanged.png", "back": "/assets/images/mucha_back.png"}
+        "imagenes": { "front": "/assets/images/limpieza.png", "back": "/assets/images/angels_back.png"}
     },
     {
         "categoria": "Ritual",

@@ -96,6 +96,14 @@ strong {
   background-color: #DCEFFC;
 }
 
+.card-header-Limpieza {
+  background-color: #e8dfec;
+}
+
+.card-header-Registros {
+  background-color: #ffe6e6;
+}
+
 .image-flip-container {
   position: relative;
   width: 100%;
